@@ -1,0 +1,6 @@
+stages{
+        stage('checkout'){
+            steps{
+                git credentialsId: 'github-creds', url: 'https://github.com/shivarammorla/jenkinstest.git'
+            }
+        }
